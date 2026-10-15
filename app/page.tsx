@@ -119,10 +119,21 @@ export default function Home() {
         Financial Analytics Dashboard
       </h3>
 
-      <p className="mt-4 max-w-2xl leading-7 text-[var(--foreground)]">
-        An interactive personal finance dashboard designed to track
-        income, spending, cash flow and transaction-level patterns.
-      </p>
+      
+<p className="mt-4 max-w-2xl leading-7 text-[var(--foreground)]">
+  An interactive personal finance dashboard designed to track
+  income, spending, cash flow and transaction-level patterns.
+</p>
+
+<div className="mt-5 border-l-2 border-[var(--accent)] pl-5">
+  <p className="text-sm leading-7 text-[var(--foreground)]/70">
+    Key insight: Track spending patterns and compare income
+    against expenses to understand cash flow over time.
+  </p>
+</div>
+
+
+      
 
       <div className="mt-5 flex flex-wrap gap-2">
           {["Power BI", "DAX", "Power Query", "Data Modeling"].map(
@@ -160,10 +171,19 @@ export default function Home() {
         Conversion &amp; Experimentation
       </h3>
 
-      <p className="mt-5 max-w-xl leading-7 text-[var(--foreground)]">
-        Diagnosing conversion leakage and identifying an opportunity
-        to improve the first-time customer journey.
-      </p>
+      
+<p className="mt-5 max-w-xl leading-7 text-[var(--foreground)]">
+  Diagnosing conversion leakage and identifying an opportunity
+  to improve the first-time customer journey.
+</p>
+
+<div className="mt-5 border-l-2 border-[var(--accent)] pl-5">
+  <p className="text-sm leading-7 text-[var(--foreground)]/70">
+    Key finding: Returning users had a 1.00 percentage-point
+    higher conversion rate than new users.
+  </p>
+</div>
+
 
       <div className="mt-6 flex flex-wrap gap-2">
         {["GA4", "BigQuery", "SQL", "Python", "Experimentation"].map(
@@ -288,6 +308,19 @@ export default function Home() {
         category and regional mix, discounting and order behaviour.
       </p>
 
+      
+<div className="mt-5 flex flex-wrap items-center gap-3">
+  <span className="inline-flex items-center rounded-full border border-[var(--accent)]/40 bg-[var(--accent)]/[0.06] px-3 py-1.5 text-sm font-medium text-[var(--accent)]">
+    Runner-up
+  </span>
+  <span className="text-sm text-[var(--foreground)]/70">
+    Tableau Data Visualization Challenge 2026
+  </span>
+</div>
+
+
+      
+
       <div className="mt-5 flex flex-wrap gap-2">
         {["Tableau", "Sales Analytics", "Data Visualization"].map((tool) => (
           <span
@@ -323,7 +356,7 @@ export default function Home() {
     </p>
 
     <a
-      href="/resume/Namaratha_Karanth_Data_Analytics_V3.pdf"
+      href="/resume/Namaratha_Karanth_CV.pdf"
       target="_blank"
       rel="noopener noreferrer"
       className="

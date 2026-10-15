@@ -91,7 +91,7 @@ export default function CashFlowAutomationPage() {
   {[
     "Bank statements",
     "AP/AR aging",
-    "Bill.com",
+    "Bill transaction records",
     "Cash-flow workbook",
   ].map((item) => (
     <span
@@ -161,6 +161,8 @@ export default function CashFlowAutomationPage() {
               </span>
             </div>
 
+            
+
             {/* Stage 03 — Output */}
             <div className="rounded-2xl border border-[var(--border)] p-5 sm:p-7">
               <div className="flex items-center justify-between gap-4">
@@ -227,7 +229,7 @@ export default function CashFlowAutomationPage() {
 
             <p className="mt-8 max-w-2xl leading-8 text-[var(--foreground)]/70">
   Weekly cash-flow reporting involved preparing data from multiple sources,
-  including bank statements, Bill.com, and accounts payable and receivable
+  including bank statements, bill transaction records, and accounts payable and receivable
   aging files.
 </p>
 
@@ -344,7 +346,7 @@ export default function CashFlowAutomationPage() {
                 {(comparison === "before"
                   ? [
                       "Bank statements in varying formats needed standardization.",
-                      "Transactions needed matching against Bill.com records.",
+                      "Transactions needed matching against bill transaction records.",
                       "AP/AR aging data required processing and reconciliation.",
                       "The cash-flow workbook needed row updates and formulas.",
                       "Missing inputs and processing issues needed investigation.",
@@ -433,7 +435,7 @@ export default function CashFlowAutomationPage() {
       </div>
 
       <p className="mt-auto pt-8 text-sm leading-6 text-[var(--foreground)]/60">
-        Overall processing time, reduced depending on data volume.
+        Observed processing times varied by client and data volume.
       </p>
     </div>
 
@@ -458,32 +460,35 @@ export default function CashFlowAutomationPage() {
       </p>
     </div>
 
-    {/* Metric 3 */}
-    <div className="group flex min-h-[280px] flex-col rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-7 transition-all duration-300 hover:border-[var(--accent)] hover:bg-[var(--accent)]/[0.07] sm:p-8">
-      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--foreground)]/50 transition-colors group-hover:text-[var(--accent)]">
-        Power Query optimisation
-      </p>
+    
+{/* Metric 3 */}
+<div className="group flex min-h-[280px] flex-col rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-7 transition-all duration-300 hover:border-[var(--accent)] hover:bg-[var(--accent)]/[0.07] sm:p-8">
+  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--foreground)]/50 transition-colors group-hover:text-[var(--accent)]">
+    Manual comparison step
+  </p>
 
-      <div className="mt-8">
-        <p className="text-4xl font-medium tracking-tight text-[var(--foreground)] sm:text-5xl">
-          45 min
-        </p>
+  <div className="mt-8">
+    <p className="text-4xl font-medium tracking-tight text-[var(--foreground)] sm:text-5xl">
+      ~45 min avg
+    </p>
 
-        <div className="mt-3 flex items-center gap-3">
-          <span className="text-xl text-[var(--accent)]" aria-hidden="true">
-            ↓
-          </span>
-          <span className="text-4xl font-medium tracking-tight text-[var(--accent)] sm:text-5xl">
-            ~30 sec
-          </span>
-        </div>
-      </div>
-
-      <p className="mt-auto pt-8 text-sm leading-6 text-[var(--foreground)]/60">
-        Processing time for one workflow step using reusable templates
-        across datasets of 800–15,000+ rows.
-      </p>
+    <div className="mt-3 flex items-center gap-3">
+      <span className="text-xl text-[var(--accent)]" aria-hidden="true">
+        ↓
+      </span>
+      <span className="text-4xl font-medium tracking-tight text-[var(--accent)] sm:text-5xl">
+        ~30 sec
+      </span>
     </div>
+  </div>
+
+  <p className="mt-auto pt-8 text-sm leading-6 text-[var(--foreground)]/60">
+    Average processing time for the manual comparison step, reduced
+    through reusable Power Query templates across datasets of
+    800–15,000+ rows.
+  </p>
+</div>
+
   </div>
 </section>
 

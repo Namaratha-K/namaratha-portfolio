@@ -79,6 +79,16 @@ export default function AmazonProject() {
               headline revenue and explore the patterns and
               trade-offs that can inform business decisions.
             </p>
+
+            
+<p className="mt-4 max-w-2xl text-sm leading-6 text-[var(--muted)]">
+  Dataset: Amazon Sales Analysis — Cleaned Data (Kaggle).
+  <br />
+  Period analyzed: 1 January 2022 – 31 December 2023.
+  <br />
+  Scope: 50,000 orders across 6 product categories and 4 regions.
+</p>
+
           </div>
         </div>
       </section>
@@ -228,7 +238,7 @@ export default function AmazonProject() {
     </h3>
 
     <p className="mt-3 text-sm leading-6 text-[var(--foreground)]/70">
-      Compare revenue, discounts, prices, customer ratings and profitability.
+      Explore revenue, discounts, prices, customer ratings and profitability to identify patterns and select the most relevant insights for the final dashboard.
     </p>
   </article>
 
@@ -431,33 +441,27 @@ export default function AmazonProject() {
   </div>
 </section>
 
-{/* Back to Work */}
+
+{/* Project Navigation */}
 <section className="mx-auto max-w-7xl px-6 pb-16 pt-10 lg:px-10 lg:pb-20 lg:pt-10">
-  <div className="flex justify-start">
+  <div className="flex flex-col justify-between gap-4 border-t border-[var(--border)] pt-8 sm:flex-row sm:items-center">
     <a
-      href="/#work"
-      className="
-        inline-flex
-        items-center
-        gap-2
-        rounded-full
-        border
-        border-[var(--border)]
-        px-5
-        py-2.5
-        text-sm
-        text-[var(--foreground)]
-        transition-all
-        duration-200
-        hover:border-[var(--accent)]
-        hover:bg-[var(--accent)]
-        hover:text-white
-      "
+      href="/projects/olist"
+      className="inline-flex items-center gap-2 rounded-full border border-[var(--border)] px-5 py-2.5 text-sm text-[var(--foreground)] transition-all duration-200 hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-white"
     >
-      ← Back to Work
+      ← Previous project
+    </a>
+
+    <a
+      href="/projects/cash-flow-automation"
+      className="inline-flex items-center gap-2 rounded-full border border-[var(--accent)] px-5 py-2.5 text-sm text-[var(--foreground)] transition-all duration-200 hover:bg-[var(--accent)] hover:text-white"
+    >
+      View Automation Case Study →
     </a>
   </div>
 </section>
+
+
       <Footer />
 
 

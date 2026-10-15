@@ -176,7 +176,7 @@ function AutomationVisual() {
   letterSpacing="2"
   fontWeight="600"
 >
-  ~90% FASTER
+  ~98.9% LESS TIME
 </text>
       </svg>
     </div>

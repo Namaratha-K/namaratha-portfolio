@@ -82,10 +82,20 @@ export default function Navbar() {
               Contact
             </a>
 
+            
+<a
+  href="/projects/cash-flow-automation"
+  onClick={closeMenu}
+  className="rounded-xl px-4 py-3 text-sm transition hover:bg-[var(--surface)] hover:text-[var(--accent)]"
+>
+  Cash Flow Automation ↗
+</a>
+
+
             <div className="my-2 border-t border-[var(--border)]" />
 
             <a
-              href="/resume/Namaratha_Karanth_Data_Analytics_V3.pdf"
+              href="/resume/Namaratha_Karanth_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               onClick={closeMenu}

@@ -371,7 +371,7 @@ export default function EcommerceProject() {
       </p>
 
       <h3 className="mt-8 text-xl font-semibold text-[var(--accent)]">
-  Funnel Progression
+  Acquisition Mix
 </h3>
 
       <p className="mt-4 leading-7 text-[var(--foreground)]">
@@ -580,6 +580,12 @@ export default function EcommerceProject() {
   <p className="mt-3 text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
     A/B Test & Statistical Evidence
   </p>
+
+  <p className="mt-4 max-w-2xl text-sm leading-7 text-[var(--muted)]">
+  The conversion rates above come from an illustrative simulated experiment
+  and are separate from the observed conversion rates reported earlier in
+  this case study.
+</p>
 
   <div className="mt-8 grid gap-16 lg:grid-cols-[1.2fr_0.8fr] lg:gap-20">
     {/* Right — Experiment Results */}
@@ -1033,33 +1039,26 @@ export default function EcommerceProject() {
   </div>
 </section>
 
-{/* Back to Work */}
-<section className="mx-auto max-w-7xl px-6 pb-16 pt-10 lg:px-10 lg:pb-20 lg:pt-10">
-  <div className="flex justify-start">
-    <a
-      href="/#work"
-      className="
-        inline-flex
-        items-center
-        gap-2
-        rounded-full
-        border
-        border-[var(--border)]
-        px-5
-        py-2.5
-        text-sm
-        text-[var(--foreground)]
-        transition-all
-        duration-200
-        hover:border-[var(--accent)]
-        hover:bg-[var(--accent)]
-        hover:text-white
-      "
-    >
-      ← Back to Work
-    </a>
-  </div>
-</section>
+
+      {/* Project Navigation */}
+      <section className="mx-auto max-w-7xl px-6 pb-16 pt-10 lg:px-10 lg:pb-20 lg:pt-10">
+        <div className="flex flex-col justify-between gap-4 border-t border-[var(--border)] pt-8 sm:flex-row sm:items-center">
+          <a
+            href="/projects/finance"
+            className="inline-flex items-center gap-2 rounded-full border border-[var(--border)] px-5 py-2.5 text-sm text-[var(--foreground)] transition-all duration-200 hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-white"
+          >
+            ← Previous project
+          </a>
+
+          <a
+            href="/projects/olist"
+            className="inline-flex items-center gap-2 rounded-full border border-[var(--accent)] px-5 py-2.5 text-sm text-[var(--foreground)] transition-all duration-200 hover:bg-[var(--accent)] hover:text-white"
+          >
+            Next project →
+          </a>
+        </div>
+      </section>
+
 
 <Footer />
 

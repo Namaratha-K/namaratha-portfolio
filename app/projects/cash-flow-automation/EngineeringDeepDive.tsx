@@ -8,9 +8,9 @@ const deepDives = [
     label: "BANK STATEMENT PROCESSING",
     title: "Bank statement processing & transaction matching.",
     description:
-      "Bank statements arrived in different formats and needed to be processed before their data could be incorporated into the cash-flow workbook. The workflow also had to reconcile bank transactions against Bill.com records, where one bank transaction could correspond to multiple Bill.com transactions.",
+      "Bank statements arrived in different formats and needed to be processed before their data could be incorporated into the cash-flow workbook. The workflow also had to reconcile bank transactions against bill transaction records, where one bank transaction could correspond to multiple bill transaction records.",
     challenge:
-      "Implementing the transaction-matching logic in Power Automate was one of the most challenging parts of the workflow.",
+       "Handling 50+ bank statement formats across clients while maintaining reusable processing logic. Implementing transaction-matching logic in Power Automate was another major challenge.",
     steps: [
       {
         title: "Identify & extract",
@@ -20,12 +20,12 @@ const deepDives = [
       {
         title: "Standardize & match dates",
         description:
-          "Use a dedicated conversion function to standardize bank statement dates to Bill.com's date format before matching transactions.",
+          "Use a dedicated conversion function to standardize bank statement dates to the required date format for bill transaction records before matching transactions.",
       },
       {
         title: "Match transactions",
         description:
-          "Match a bank statement transaction against multiple Bill.com transactions using dates and amounts, then capture the relevant transaction descriptions.",
+          "Match a bank statement transaction against multiple bill transaction records using dates and amounts, then capture the relevant transaction descriptions.",
       },
       {
         title: "Update the workbook",
@@ -34,7 +34,7 @@ const deepDives = [
       },
     ],
     insight:
-      "Reliable transaction matching required more than comparing amounts. Date formats had to be standardized before the matching logic could reconcile a bank transaction against multiple Bill.com records.",
+      "Supporting 50+ bank statement formats required format identification and appropriate processing logic. Reusable utility functions helped reduce duplicated logic across client-specific implementations. Reliable transaction matching also required standardizing date formats before reconciling a bank transaction against multiple bill transaction records.",
   },
   {
     number: "02",
@@ -110,11 +110,18 @@ export default function EngineeringDeepDive() {
 
   const active = deepDives[activeIndex];
 
-  function goTo(index: number) {
-    setActiveIndex(
-      (index + deepDives.length) % deepDives.length
-    );
-  }
+  
+function goTo(index: number) {
+  setActiveIndex(
+    (index + deepDives.length) % deepDives.length
+  );
+
+  document.getElementById("engineering-deep-dive")?.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+}
+
 
   return (
     <section

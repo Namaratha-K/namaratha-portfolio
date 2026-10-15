@@ -241,7 +241,7 @@ export default function OlistProject() {
 
     <div className="mt-4 flex items-baseline gap-1">
       <p className="text-3xl font-semibold tracking-tight text-[var(--accent)]">
-        1.74
+        1.73
       </p>
       <span className="text-lg text-[var(--accent)]">★</span>
     </div>
@@ -596,7 +596,7 @@ export default function OlistProject() {
             4.28★
           </p>
           <p className="mt-1 text-sm text-[var(--muted)]">
-            Under $10 freight
+            Under R$10 freight
           </p>
         </div>
 
@@ -607,7 +607,7 @@ export default function OlistProject() {
             3.65★
           </p>
           <p className="mt-1 text-sm text-[var(--muted)]">
-            $80+ freight
+            R$80+ freight
           </p>
         </div>
       </div>
@@ -861,11 +861,18 @@ export default function OlistProject() {
 
     {/* Right */}
     <div>
-      <p className="max-w-3xl text-sm leading-6 text-[var(--foreground)]/80 sm:text-base">
-        The analysis was built around an order-level analytical base,
-        combining multiple marketplace tables while controlling for
-        fan-out and duplicate aggregation.
-      </p>
+      
+<p className="max-w-3xl text-sm leading-6 text-[var(--foreground)]/80 sm:text-base">
+  The analysis was built around an order-level analytical base,
+  combining multiple marketplace tables while controlling for
+  fan-out and duplicate aggregation.
+</p>
+
+<p className="mt-4 max-w-3xl text-sm leading-6 text-[var(--muted)]">
+  Dataset: Brazilian Olist e-commerce public dataset.
+  Period analyzed: 4 September 2016 – 17 October 2018.
+</p>
+
 
       {/* Summary metrics */}
       <div className="mt-8 grid grid-cols-3 border-b border-[var(--border)] pb-8">
@@ -1055,7 +1062,7 @@ export default function OlistProject() {
     </a>
 
     <a
-      href="https://docs.google.com/presentation/d/1Q35aHr8yJ6pNLkr50gqfBP_4XATCQSuK/edit?usp=drive_link&ouid=111265864405339006373&rtpof=true&sd=true"
+      href="https://canva.link/b7yjsk224j945wz"
       target="_blank"
       rel="noopener noreferrer"
       className="inline-flex rounded-full border border-[var(--border)] px-6 py-3 text-sm font-medium text-[var(--foreground)] transition hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-white"
@@ -1065,33 +1072,26 @@ export default function OlistProject() {
   </div>
 </section>
 
-{/* Back to Work */}
+
+{/* Project Navigation */}
 <section className="mx-auto max-w-7xl px-6 pb-16 pt-10 lg:px-10 lg:pb-20 lg:pt-10">
-  <div className="flex justify-start">
+  <div className="flex flex-col justify-between gap-4 border-t border-[var(--border)] pt-8 sm:flex-row sm:items-center">
     <a
-      href="/#work"
-      className="
-        inline-flex
-        items-center
-        gap-2
-        rounded-full
-        border
-        border-[var(--border)]
-        px-5
-        py-2.5
-        text-sm
-        text-[var(--foreground)]
-        transition-all
-        duration-200
-        hover:border-[var(--accent)]
-        hover:bg-[var(--accent)]
-        hover:text-white
-      "
+      href="/projects/ecommerce"
+      className="inline-flex items-center gap-2 rounded-full border border-[var(--border)] px-5 py-2.5 text-sm text-[var(--foreground)] transition-all duration-200 hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-white"
     >
-      ← Back to Work
+      ← Previous project
+    </a>
+
+    <a
+      href="/projects/amazon"
+      className="inline-flex items-center gap-2 rounded-full border border-[var(--accent)] px-5 py-2.5 text-sm text-[var(--foreground)] transition-all duration-200 hover:bg-[var(--accent)] hover:text-white"
+    >
+      Next project →
     </a>
   </div>
 </section>
+
 
 <Footer />
     </main>

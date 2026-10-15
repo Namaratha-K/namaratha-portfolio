@@ -232,20 +232,25 @@ export default function AboutPanel() {
                 </p>
 
                 <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-                  {[
+                  
+{[
   "SQL",
   "Python",
   "Pandas",
-  "Excel",
+  "EDA",
+  "Advanced Excel",
+  "Google Sheets",
+  "ETL",
   "Power Query",
-  "Power BI",
+  "Power BI (DAX)",
   "Tableau",
   "Matplotlib",
   "Power Automate",
   "n8n",
-  "Google Sheets",
+  "Jira",
   "Google Colab",
 ].map((tool, index) => (
+
                     <div
                       key={tool}
                       className={`flex min-h-16 items-center justify-center border border-[var(--border)] px-3 text-center text-sm transition-all duration-500 ${
@@ -391,33 +396,52 @@ export default function AboutPanel() {
               </h2>
 
               <div className="mt-10 grid gap-7 sm:grid-cols-2">
-                <div>
-  <p className="text-sm font-semibold text-[var(--accent)]">Analytics</p>
+
+<div>
+  <p className="text-sm font-semibold text-[var(--accent)]">
+    Data Analysis
+  </p>
   <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-    Power BI · SQL · Python · Pandas · EDA
+    SQL · Python · Pandas · EDA · Advanced Excel · Google Sheets
   </p>
 </div>
 
 <div>
-  <p className="text-sm font-semibold text-[var(--accent)]">Data &amp; BI</p>
+  <p className="text-sm font-semibold text-[var(--accent)]">
+    Data Transformation
+  </p>
   <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-    Power Query · Excel · Tableau · Matplotlib · Google Sheets
+    ETL · Power Query
   </p>
 </div>
 
 <div>
-  <p className="text-sm font-semibold text-[var(--accent)]">AI &amp; Automation</p>
+  <p className="text-sm font-semibold text-[var(--accent)]">
+    BI &amp; Visualization
+  </p>
   <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-    Power Automate · n8n · Prompt Engineering
+    Power BI (DAX, dashboards) · Tableau · Matplotlib
   </p>
 </div>
 
 <div>
-  <p className="text-sm font-semibold text-[var(--accent)]">Tools &amp; Workflow</p>
+  <p className="text-sm font-semibold text-[var(--accent)]">
+    AI &amp; Automation
+  </p>
+  <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
+    Power Automate · n8n
+  </p>
+</div>
+
+<div>
+  <p className="text-sm font-semibold text-[var(--accent)]">
+    Tools
+  </p>
   <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
     Jira · Google Colab
   </p>
 </div>
+
 <p className="mt-10 max-w-xl text-left text-sm leading-7 text-[var(--muted)]">
   Open to picking up{" "}
   <span className="text-[var(--accent)]">new tools on demand.</span>

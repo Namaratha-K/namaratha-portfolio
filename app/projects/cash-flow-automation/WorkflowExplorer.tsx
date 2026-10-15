@@ -8,11 +8,11 @@ const stages = [
     title: "Inputs",
     subtitle: "Source files",
     description:
-      "The reporting workflow brought together bank statements, AP/AR aging data, Bill.com records, and the cash-flow workbook.",
+      "The reporting workflow brought together bank statements, AP/AR aging data, bill transaction records, and the cash-flow workbook.",
     details: [
         "Cash-flow workbook — the workbook updated by the reporting process.",
         "Bank statements — transaction details from bank accounts.",
-        "Bill.com — transaction data.",
+        "Bill transaction records — transaction data.",
         "AP & AR aging — accounts payable and receivable records.",
 ],
     technology: "Excel · Source files",
@@ -36,11 +36,11 @@ const stages = [
     title: "Transformation",
     subtitle: "Data preparation",
     description:
-      "Input data was standardized and prepared for reporting. Reusable Power Query templates supported data processing, while a dedicated function converted bank statement dates to Bill.com's date format before transaction matching.",
+      "Input data was standardized and prepared for reporting. Reusable Power Query templates supported data processing, while a dedicated function converted bank statement dates to bill trnasactions's date format before transaction matching.",
     details: [
       "Identify bank statement formats and extract required columns.",
       "Standardize dates for transaction matching.",
-      "Match bank transactions against Bill.com records using dates and amounts.",
+      "Match bank transactions against bill transaction records using dates and amounts.",
       "Prepare AP/AR aging data and refresh relevant queries.",
     ],
     technology: "Power Query · Power Automate",

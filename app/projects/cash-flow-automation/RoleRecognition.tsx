@@ -10,7 +10,7 @@ const contributions = [
     icon: "⌘",
     summary: "Contributed to the development and evolution of the solution.",
     detail:
-      "Contributed across V0–V14 of the Cash Flow Process Automation solution, helping evolve the workflow through successive iterations.",
+      "Contributed to the iterative development of the Cash Flow Process Automation solution, refining workflows and improving the automation over successive iterations.",
     skills: ["Power Automate", "Workflow Design", "Process Automation"],
   },
   {
@@ -18,9 +18,9 @@ const contributions = [
     number: "02",
     title: "Transaction Matching",
     icon: "⌁",
-    summary: "Connected bank statement transactions with Bill.com records.",
+    summary: "Matched bank statement transactions against bill transaction records.",
     detail:
-      "Implemented transaction-matching logic involving date standardisation and amount-based matching, including cases where one bank transaction corresponded to multiple Bill.com transactions.",
+      "Implemented transaction-matching logic involving date standardisation and amount-based matching, including cases where one bank transaction corresponded to multiple bill transaction records.",
     skills: ["Data Reconciliation", "Date Standardisation", "Matching Logic"],
   },
   {
@@ -508,8 +508,9 @@ const d = `M ${startX} ${startY} C ${
 
                 <div>
                   <p className="text-sm leading-6 text-[var(--muted)]">
-                    The prototype was subsequently presented to international
-                    leadership by the Managing Director.
+                    
+The prototype was subsequently presented to senior leadership, highlighting the solution's potential to improve financial reporting workflows.
+
                   </p>
                 </div>
               </div>

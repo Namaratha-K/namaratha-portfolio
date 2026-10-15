@@ -287,32 +287,26 @@ export default function FinanceProject() {
       </section>
 
       {/* Footer */}
+      
+      {/* Project Navigation */}
       <section className="mx-auto max-w-7xl px-6 py-16 lg:px-10">
-  <div className="flex justify-start">
-    <a
-      href="/#work"
-      className="
-        inline-flex
-        items-center
-        gap-2
-        rounded-full
-        border
-        border-[var(--border)]
-        px-5
-        py-2.5
-        text-sm
-        text-[var(--foreground)]
-        transition-all
-        duration-200
-        hover:border-[var(--accent)]
-        hover:bg-[var(--accent)]
-        hover:text-white
-      "
-    >
-      ← Back to Work
-    </a>
-  </div>
-</section>
+        <div className="flex flex-col justify-between gap-4 border-t border-[var(--border)] pt-8 sm:flex-row sm:items-center">
+          <a
+            href="/#work"
+            className="inline-flex items-center gap-2 rounded-full border border-[var(--border)] px-5 py-2.5 text-sm text-[var(--foreground)] transition-all duration-200 hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-white"
+          >
+            ← Back to Work
+          </a>
+
+          <a
+            href="/projects/ecommerce"
+            className="inline-flex items-center gap-2 rounded-full border border-[var(--accent)] px-5 py-2.5 text-sm text-[var(--foreground)] transition-all duration-200 hover:bg-[var(--accent)] hover:text-white"
+          >
+            Next project →
+          </a>
+        </div>
+      </section>
+
 
 <Footer />
 
